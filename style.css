@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ORTAK ALAN*/
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #ffff;
+
+}
+
+section{
+    min-height: 100vh;
+    background-color: #0a080a;
+}
+
+/*ÜST TARAF*/
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding:20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #0a080a;
+
+    z-index: 100;
+}
+header img{
+    width: 150px;
+    
+}
+header nav{
+    display: flex;
+    gap: 20px;
+    
+}
+header nav a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+}
+
+header nav a:hover{
+    color: crimson;
+    text-shadow: 2px 2px 10px crimson ;
+    transition: all 0.3s;
+}
+
+/*KARŞILAMA EKRANI*/
+#welcome-sec{
+    background-image: url('images/main.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.welcome-text{
+    width: 90vw;
+    margin:  auto; /*EN SON BURAYA BAK*/
+}
+
+.welcome-text h1{
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+}
+.welcome-text p{
+    max-width: 700px;
+    margin: 90px auto;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+/*HAKKINDA ALANI*/
+
+#sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 0 50px;
+
+}
+
+/*sol taraf*/
+.left-side{
+    max-width: 600px;
+
+}
+
+.left-side h1{
+    font-size: 75px;
+    line-height: 80px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid rgb(231, 27, 187);
+}
+
+.left-side p{
+    margin-top: 30px;
+}
+
+.left-side p span{
+    border-bottom:  3px solid crimson;
+}
+
+.question{}
+
+/*sağ taraf*/
+.right-side{
+    max-width: 600px;
+    max-height: 600px;
+
+} .right-side img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*RESPONSİVE=GEREKSİNİMLER ALANI*/
+
+#sec-2{
+    background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 50%), 
+    url(images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+
+} 
+
+.heading{
+    text-align: center;
+}
+.heading h5{
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+.heading h1{
+    font: 60px;
+    font-weight: 500;
+}
+
+.boxes{
+    width: 620px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.box{
+    width: 300px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+
+}
+
+.box:last-child{
+    width: 610px;
+    
+}
+.box h2{
+    color: crimson;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.box p{
+    font-size: 18px;
+}
+
+/*FİKİRLER ALANI*/
+
+#sec-3 {
+    background-image: url(images/sec-3.png);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-around;
+
+}
+#sec-3 .left{
+    max-width: 450px;
+}
+
+#sec-3 .left h3{
+    font-size: 24px;
+}
+
+#sec-3 .left h1{
+    font-size: 80px;
+
+}
+
+#sec-3 .left p{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+#sec-3 .left button{
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 50px;
+  cursor: pointer;
+  border: none;
+  transition: backgorund-color 0.4s, color 0.4s;
+
+}
+
+#sec-3 .left button:hover{
+    background-color: black;
+    color: red;
+    transition: all 0.4s;
+}
+
+#sec-3 .right{
+
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: end;
+}
+
+.card{
+    width: 450px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card:nth-child(2){
+    align-self: flex-start;
+}
+
+.person-info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-detail h1{
+    color: crimson;
+}
+
+small{
+    color: gray;
+}
+
+
+/* 1500px altında */
+@media (max-width:1500px) {
+    .right-side {
+        max-width: 500px;
+        max-height: 500px;
+    }  
+}
+
+/*1100px altında*/
+@media (max-width:1100px) {
+    #sec-1{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .right-side {
+        max-width: 300px;
+        max-height: 300px;
+        margin-top: 40px;
+    }  
+
+    #sec-3{
+        flex-direction: column;
+    }
+
+    #sec-3 .right{
+        align-items: center;
+    
+    }
+
+    .card:nth-child(2) {
+      align-self: center;
+    }
+
+   
+
+}
